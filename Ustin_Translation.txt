@@ -54,28 +54,25 @@ Paragraph
  even a torture making this route living in misery, but we decided to say that we are survivors
 
 Paragraph
- The Republic of Haiti, a country of the Caribbean, located on the Western part of the island of Espanola, adjoining The Dominican Republic, has a surface area of over 10 000 square miles and a population of 10.
-85 million.
+ The Republic of Haiti, a Caribbean country, located on the Western part of the island of Hispaniola, adjoining The Dominican Republic, has a surface area of over 10,000 square miles and had a population of over 10 million in 2015.
+ (USTIN:  ARE YOU OKAY WITH THE CHANGE IN STATS)
   Its political and cultural capital is Port au Prince.
-  It was gravely damaged by the earthquake on January 12, 2010.
-  Due to the climatic conditions, it is said, that 80% of people live in poverty -- according to The World Factbook -- and only two-thirds of the population depends on agriculture and fish.
+  It was gravely damaged by the January 12  2010 earthquake.
+  According to The World Factbook, eighty percent of the population lives in poverty due to climactic conditions, and two-thirds depend upon agriculture and fish.
+  (USTIN:  NOT CLEAR. ARE THE FISH && AGRICULTURE CONNECTED WITH THE POVERTY AND CLIMATE)
  It was an formerly French colony and was the first black country to declare its independence in 1804.
-  Sadly the hope for life did not go beyond 52 years (life expectancy does not exceed 52 years), and only 1 in 150 Haitians receive a salary.
-  Fifty percent of Haitians depend on remittances from family members living abroad.
-  In a country rich in gastronomy it is ironic that its children live in extreme poverty caused by the insecurity and natural disasters , the politics are moderate.
-  Inasmuch as the education, it contains a people very intelligent and proud with few opportunities, which provokes the migration of the Haitians to diverse parts of the world with the intention of helping the members of their families and to have a better academic preparation, conforming thus to the “diaspora” of the Haitians living in the exterior.
+Sadly, life expectancy rarely exceeds 52 years.  Only 1 in 150 Haitians receive a salary.
+  Fifty percent of Haitians depend upon remittances received from relatives living abroad.
+  It is a country rich in gastronomy yet ironically its children live in extreme poverty caused by insecurity and natural disasters.
+  Its politics are moderate.
+As far as education goes,
+Haiti contends with (TRATARSE DE)
+a very intelligent and proud people with few opportunities,
+which provokes Haitians to migrate
+to diverse parts of the world
+with the intention of helping their children to obtain better academic preparation,
+thus constituting the so-called "diaspora" of Haitians living abroad.
 
-
-Paragraph
-República de Haití, país del Caribe, ubicado en la parte occidental de la isla La Española, colinda con República Dominicana, tiene una superficie de 27 750 km2 y una población de 10,85 millones (2015).
- Su capital y ciudad principal es Puerto Príncipe.
- Fue gravemente dañado por el terremoto del 12 de enero del 2010.
- Debido a su situación climática se dice que el 80% vive en la pobreza —de acuerdo a The World Factbook- y solamente dos tercios de la población dependen de la agricultura y la pesca.
- Fue una antigua colonia francesa y fue el primer país negro en declarar su  independencia en el año 1804.
- Tristemente la esperanza de vida no rebasa los 52 años y sólo 1 de 150 haitianos recibe un salario.
- El 50% de los haitianos depende de las remesas familiares recibidas del exterior.
- Es un país rico en gastronomía e irónicamente sus hijos viven en la pobreza extrema causada por la inseguridad y los desastres naturales, la política es moderada.
- En cuanto a la educación, se trata de un pueblo muy inteligente y orgulloso con pocas oportunidades, lo cual provoca la migración de los haitianos a diversas partes del mundo con la intención de ayudar a los miembros de sus familias a tener una mejor preparación académica, conformando así la "diáspora", nombre de los haitianos que viven en el exterior.
 
 
 
@@ -86,20 +83,6 @@ República de Haití, país del Caribe, ubicado en la parte occidental de la isl
 
 
 FIRST DRAFT
-
-
-
-Paragraph
- The Republic of Haiti, a country of the Caribbean, located on the Western part of the island of Espanola, adjoining The Dominican Republic, has a surface area of over 10 000 square miles and a population of 10.
-85 million.
-  Its political and cultural capital is Port au Prince.
-  It was gravely damaged by the earthquake on January 12, 2010.
-  Due to the climatic conditions, it is said, that 80% of people live in poverty -- according to The World Factbook -- and only two-thirds of the population depends on agriculture and fish.
- It was an formerly French colony and was the first black country to declare its independence in 1804.
-  Sadly the hope for life did not go beyond 52 years (life expectancy does not exceed 52 years), and only 1 in 150 Haitians receive a salary.
-  Fifty percent of Haitians depend on remittances from family members living abroad.
-  In a country rich in gastronomy it is ironic that its children live in extreme poverty caused by the insecurity and natural disasters , the politics are moderate.
-  Inasmuch as the education, it contains a people very intelligent and proud with few opportunities, which provokes the migration of the Haitians to diverse parts of the world with the intention of helping the members of their families and to have a better academic preparation, conforming thus to the “diaspora” of the Haitians living in the exterior.
 
 
 Paragraph
