@@ -49,12 +49,12 @@ Paragraph
  From the moment we depart,
  all of us who have decided to leave our places of origin
  live dark, difficult, complicated, uncertain moments and
- even though making this journey while living in misery was torture,
- we can say that we are survivors.
- even a torture making this route living in misery, but we decided to say that we are survivors
+ even though making this miserable journey felt like torture,
+  we can still say that we are survivors.
+ 
 
 Paragraph
- The Republic of Haiti, a Caribbean country, located on the Western part of the island of Hispaniola, adjoining The Dominican Republic, has a surface area of over 10,000 square miles and had a population of over 10 million in 2015.
+ The Republic of Haiti, a Caribbean country, located on the Western side of the island of Hispaniola, adjoining the Dominican Republic, has a surface area of over 10,000 square miles and had a population of over 10 million in 2015.
  (USTIN:  ARE YOU OKAY WITH THE CHANGE IN STATS)
   Its political and cultural capital is Port au Prince.
   It was gravely damaged by the January 12  2010 earthquake.
@@ -70,9 +70,40 @@ Haiti contends with (TRATARSE DE)
 a very intelligent and proud people with few opportunities,
 which provokes Haitians to migrate
 to diverse parts of the world
-with the intention of helping their children to obtain better academic preparation,
+with the intention of helping their children better to prepare academically,
 thus constituting the so-called "diaspora" of Haitians living abroad.
 
+
+SECOND DRAFT
+
+
+
+SInce the 7.3 magnitude earthquake on January 12, 2010 at 4:53PM, the country has confronted a chaotic situation, with around 300,000 dead: brothers, sisters, fathers, mothers, children, and friends lost their lives in this tragedy, which is consdered  a black day in Haiti.
+
+
+
+Some countries came to help, although this led to negative rumors about who received the aid money.
+To the Haitian people, all that remained depended upon God.
+
+
+
+Haitians considered Brazil to be the first country for seeking asylum and they arrived there in a massive way.
+THousands of Haitians crossed the Dominican Republic, Ecuador and Peru, in order to be able to reach Brazil with the possiblity of changing their living condidions.
+From 2010 to 2014, Brazil was ranked among the world's langest economies with its currency (the real) that was worth forty cents to the dollar
+
+This unstable value was even more valuable for Haitians because unemployment took its toll.
+With a salary of a thousand *reales*, Haitians had to pay rent for their familes, among other expenses.
+At the beginning of 2015, everything began to change: the economy contracted after the 2015 World Cup and thus the Haitians, unfortunately, began to lose their jobs.
+
+Still there was hope that the situation would imporve and that there could be a change; however, the dollar continued its course and continued to resist the economic situation until the next year.
+The Haitians saw that the sitution was getting worse every monent, so they made the decision to leave the country to look for something better, and thus their eyes turned towards the United States.
+Not all Haitians had relatives there; nevertheless they made the decision to leave just like those who did have relatives who could receive them in that coutry.
+
+
+
+It was possible to live in Brazil, but the dury to help one's family was stronger and the decison was not to stay there and wait, but to look for a better quality of life 
+What ewe did was not going to increase the misey in Hiati; neverthless, the support of ten dollars would make a big difference for our parents.
+THe majority of Haitains who live in Haiti depend on other people who live in the United States, Canada, Brazil, France, Ecuador, Venezuala, etc, who have already overcome their economic problems, or at least, who were stable, without havng to struggle. 
 
 
 
@@ -85,9 +116,7 @@ thus constituting the so-called "diaspora" of Haitians living abroad.
 FIRST DRAFT
 
 
-Paragraph
- Since the earthquake of January 12 2010 which started at 453 PM and with a magnitude of 7.
-3, el country has confronted a chaotic situation, with around 300,000 dead: brothers, sisters, fathers, mothers, children, and friends who lost their lives in this tragedy which was considered as a black date in Haiti
+
 
 Paragraph
  Some countries arrived to help out, even though this lent itself to negative rumors about who was remaining with the aid.
