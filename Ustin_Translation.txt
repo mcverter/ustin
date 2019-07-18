@@ -27,9 +27,9 @@ Find below:
 (A)  Third draft -- what I am working on now
 (B) First draft -- This is a very messy text.  On purpose.
 This comes from reading aloud while typing.
-This draft is useful because it contains English congates which are similar to the Spanish original.
+This draft is useful because it contains English cognates which are similar to the Spanish original.
 There might be English translations which better than the cognates.
-It also contains many phrasings and many wordings that might sound akward
+It also contains many phrasings and many wordings that might sound awkward
 in English but which try to mirror the Spanish.
 Also, this translation might contain many mistakes.
 This is because I did not fully understand it while I was reading it and wanted to remember the confusion.
@@ -200,9 +200,13 @@ Paragraph
  everything depended upon the traffickers, better known as the "coyotes."
 
   Peru was situated as the first meeting place for the majority of migrants,
-  who were not only Haitians; there were persons from between the majority of migrants, who were not only Haitians:  there were persons from Senegal, Congo, Ghana, Pakistan, among others.  
-  We were speaking different languages and came from different cultures, but we all had the same objective: to reach the United States.
-  This period of coexistence gave us the opportunity to make new friends, allowing us to create a sense of harmony, one that might even be called familiar.  
+  who were not only Haitians; there were persons from between
+  the majority of migrants, who were not only Haitians:
+  there were persons from Senegal, Congo, Ghana, Pakistan, among others.  
+  We were speaking different languages and came from different cultures,
+  but we all had the same objective: to reach the United States.
+  This period of coexistence gave us the opportunity to make new friends,
+  allowing us to create a sense of harmony, one that might even be called familiar.  
 
 
 Paragraph
@@ -212,12 +216,19 @@ Paragraph
  Money is always right
 
 Paragraph
- A friend and I left together from a place called Canoas, located in the south of Brazil, it was  the exit route to cross fewer countries.
+ A friend and I left together from a place called Canoas, located in the south of Brazil,
+ it was  the exit route to cross fewer countries.
 
 Paragraph
-We crossed Peru in three or four days by bus, passing from city to city in order to cross the border of Ecuador.
+We crossed Peru in three or four days by bus, passing from city to city
+in order to cross the border of Ecuador.
    We were very tired, but a great hope nourished our hearts.
-   In Peru we felt very uneasy because we were illegal, travelling with a lot of stress, being careful not only around the politce but also around theives who tried to take advantage of us in order to steal our belongingings.  THerefore we used differeent techniqes to safeguard the money that we carried from Brazll;  some used their shoes, others their disoderants, others soaps and other personal items
+   In Peru we felt very uneasy because we were illegal, traveling with a lot of stress,
+   being careful not only around the police but also around thieves who tried
+   to take advantage of us in order to steal our belongings.
+   Therefore we used different techniques to safeguard the money
+   that we carried from Brazil;  some used their shoes,
+   others their deodorants, others soaps and other personal items
 
 
 
