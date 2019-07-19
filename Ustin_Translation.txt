@@ -383,28 +383,35 @@ but fortunately there were no police in sight.
   There were many people waiting there.  
   When we arrived to the border, it was all very strange,
   we were very stressed and felt many unpleasant feelings.
-  
-=====================
-FIRST DRAFT
-=====================
-
-  
-
-
-
 
 Paragraph
  Chapter 3: Columbia
 
 Paragraph
- It begins with some type of risk
+A risky start
 
 Paragraph
- In the life you have two options:  1) lay down in your bed to dream or 2) get up from your bed to realize your dreams.
- And that is what was done.
-  Your  server took root settled in Brazil, where wored in a restaurant as a waiter from noon to 7AM, employment which paid 1300 reales a month.
-  My provenance is Haiti, born in Port au Prince within a dysfunctional family, formed only by my mother, a sister and a brother.
-  For things of destiny we separated and to me it took me to grow up at the side of my grandmother who died when I was twenty years old and, at twenty-three, when it stayed me only three years, I decided to leave for Brazil to look for my luck
+ In life you have two options:  1) go to bed and dream or 2) get up from your bed to realize your dreams.
+ And that is what I did.
+  Your humle servant took root in Brazil,
+  where he worked in a restaurant as a waiter from midnight until to 7 AM,
+  a job that paid 1300 reales a month.
+  I come from Haiti.
+  I was born in Port-au-Prince within a dysfunctional family,
+  formed only by my mother, a sister and a brother.
+For matters of fate,
+(AWK!!!  things of destiny?  reasons of fate?  Out of fortune? Esp bc paragraph ends with "luck" and risk/gamble is motif throughout)
+we separated and I was taken to grow up by the side of my grandmother
+who died when I was twenty years old.
+When I was twenty-three, after staying around for only three years,
+I decided to leave for Brazil to find my luck.
+
+
+
+=====================
+FIRST DRAFT
+=====================
+
 
 
 Paragraph
@@ -2248,11 +2255,7 @@ Paragraph
 Paragraph
 En la vida tienes dos opciones: 1) acostarte en tu cama a soñar o 2) levantarte de tu cama para realizar tus sueños.
  Y eso fue lo que hice.
- Su servidor radica en Brasil, donde trabajaba en un restaurante como mesero de las 12 p.
-m.
- hasta las 7 a.
-m.
-, empleo cuya paga era de $1300 reales al mes.
+ Su servidor radica en Brasil, donde trabajaba en un restaurante como mesero de las 12 p.m. hasta las 7 a.m., empleo cuya paga era de $1300 reales al mes.
  Provengo de Haití, nací en Puerto Príncipe dentro de una familia disfuncional, formada únicamente por mi madre, una hermana y un hermano.
  Por cosas del destino nos separamos y a mí me tocó crecer al lado de mi abuela, quien falleció cuando yo tenía veinte años y a los veintitrés, después de quedarme solo tres años, decidí partir a Brasil a buscar mi suerte.
 
@@ -2263,6 +2266,7 @@ Capítulo III.
 
 Paragraph
 El comienzo de cualquier tipo de riesgo
+ Risky beginnings
 
 Paragraph
 La frontera entre Brasil y Colombia es un límite internacional continuo de 1644,2 kilómetros, el cual es completamente delimitado.
