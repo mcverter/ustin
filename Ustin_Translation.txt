@@ -407,6 +407,19 @@ When I was twenty-three, after staying around for only three years,
 I decided to leave for Brazil to find my luck.
 
 
+According to Wikipedia,
+the border between brazil and columbia is a continuous 1,021.7 mile international boundary
+that completely delimits it.
+The borderline crosses  502.6 miles of river and canals,
+and 380.3 miles of conventional borders, (LINEAS CONVENCIONALES?)
+and 138.7 miles of waterways.
+[footnote]
+
+[footnote]
+Paragraph
+FOOTNOTE:
+(https://es.wikipedia.org/wiki/Frontera_entre_Brasil_y_Colombia,
+accessed September 1, 2017)
 
 =====================
 FIRST DRAFT
@@ -414,13 +427,7 @@ FIRST DRAFT
 
 
 
-Paragraph
- The border between brazil and columbia is a limit international that continues 10216.
-6 miles and wheis is completely delimited.
-  The borderline crosses across for 5026.
-3 miles of river and canals and 380.
-3 miles of lines conventional; and 138.
-7 miles of divisions of waters (FOOTNOTE 1)
+
 
 Paragraph
  
@@ -438,10 +445,6 @@ Paragraph
   SOme Colombians of good heart -- despite the citizens having to defend themselves from invaders, without knowing us intended to help us with their carts , but it was in vain because the hill was too heavy and the carts could not climb it.
   THey, with such help to the migrants, engineered to put the people underneath the carts, or to put bags of trash or rice around the individuals but it was useless, because they were discovered
 
-Paragraph
-FOOTNOTE: Consulting the September 1 http://www.
-wikiwand.
-com/es/Frontera_entre_Brasil_y_Colombia (accessed September 1, 2017)
 
 Paragraph
  Seeing what was happening, we reunited all of us to take a decision about what would benefit us for the power to arrive.
@@ -2248,6 +2251,12 @@ Paragraph
 
  Él nos bajó del taxi y nos dijo que buscáramos cómo continuar, ahí había mucha gente esperando y cuando llegamos a la frontera era todo muy extraño, subía el estrés y más sentimientos encontrados.
 
+Paragraph
+Capítulo III.
+ Colombia
+
+Paragraph
+El comienzo de cualquier tipo de riesgo
 
 Paragraph
  
@@ -2260,20 +2269,11 @@ En la vida tienes dos opciones: 1) acostarte en tu cama a soñar o 2) levantarte
  Por cosas del destino nos separamos y a mí me tocó crecer al lado de mi abuela, quien falleció cuando yo tenía veinte años y a los veintitrés, después de quedarme solo tres años, decidí partir a Brasil a buscar mi suerte.
 
 
-Paragraph
-Capítulo III.
- Colombia
 
-Paragraph
-El comienzo de cualquier tipo de riesgo
- Risky beginnings
 
 Paragraph
 La frontera entre Brasil y Colombia es un límite internacional continuo de 1644,2 kilómetros, el cual es completamente delimitado.
- La línea limítrofe transcurre por 808,9 kilómetros de ríos y canales; 612,1 kilómetros por
-
-Paragraph
-líneas convencionales; y 223,2 kilómetros por divisorias de aguas.
+ La línea limítrofe transcurre por 808,9 kilómetros de ríos y canales; 612,1 kilómetros por líneas convencionales; y 223,2 kilómetros por divisorias de aguas.
 1
 
 Paragraph
