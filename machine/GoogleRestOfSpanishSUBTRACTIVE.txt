@@ -1,14 +1,4 @@
- <div class = "photo"> <figure> <img src = "images / SobrevivSecondHalf-6.jpg" /> <figcaption> Misery on the border between Costa Rica and Nicaragua was categorical, there were no authorities waiting for us, No one offered us anything. On this border he who has money, has to eat </figcaption> </figure> <div> <div> <p> On one occasion, one of the ships will not be ported, was lost at the bottom of the Sea with several migrants. And there was another case of a baby who fell into the water and unfortunately the ship's captain would not stop. Everyone was angry and desperate, but - although people wanted to help - it was not possible to do so. The ship had to run its course. When people dropped their backpacks or suitcases, they less stopped. </p> </div>
-
- <div> <p> Another way to travel was by land in a trailer that passed through customs. The drivers did it when they met someone they knew working in customs. It was a way to get to Honduras faster. Every night there were people waiting for a driver to help them continue. Sometimes they did, but there were also traps, because the thieves were on the prowl. </p> </div>
-
- <div class = "photo"> <figure> <img src = "images / SobrevivSecondHalf-7.jpg" /> </figure> </div>
-
- <div> <p> Chapter VII. Nicaragua </p> </div>
-
- <div> <p> Forbidden Land </p> </div>
-
-<div> <p> Nicaragua is the only country that cannot be crossed despite having diplomatic relations with Haiti. All the power of that country depends on its president. Because of the migrants, Nicaraguan soldiers have jobs every day. The first time I arrived in that land was with a group of Cubans. These types of trips have their own name. We called it via, derived from the word travel in Spanish. Cubans do not travel frequently with Haitians because they have their own contacts and in fact each nation has its own travel style. </p> </div>
+ <div> <p> Nicaragua is the only country that cannot be crossed despite having diplomatic relations with Haiti. All the power of that country depends on its president. Because of the migrants, Nicaraguan soldiers have jobs every day. The first time I arrived in that land was with a group of Cubans. These types of trips have their own name. We called it via, derived from the word travel in Spanish. Cubans do not travel frequently with Haitians because they have their own contacts and in fact each nation has its own travel style. </p> </div>
 
  <div> <p> I must make a parenthesis to explain that there was a Senegalese. They were brave; he had crossed all Nicaragua on foot, he was very smart in his journey, because in each strategic place he had marked and left a sign thinking - of course - that there could be a possibility of being returned. No doubt he was willing to try again if, upon arriving in Honduras, he was returned to Costa Rica. </p> </div>
 
