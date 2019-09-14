@@ -90,6 +90,15 @@ echo <<<EOS
             text-align:center;
             border: 5px solid maroon;
         }
+        figcaption {
+            background-color: #222;
+            color: #fff;
+            font: italic 125% sans-serif;
+            padding: 3px;
+            text-align: center;
+            margin: 15px;
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
@@ -209,57 +218,64 @@ if ($english_length !== $spanish_length) {
 }
 
 for ($i = 0; $i < $english_length; $i++) {
-    RenderParagraph($i, $english_paragraphs, $spanish_paragraphs);
+    $english_paragraph = $english_paragraphs[$i];
+    $spanish_paragraph = $spanish_paragraphs[$i];
+
+    if (strstr($english_paragraph, "<img src")) {
+        $match = [];
+        preg_match('/"(.*)"/',$english_paragraph,$match);
+        $url = $match[1];
+        $caption = $english_paragraphs[++$i];
+        RenderImage($url, $caption);
+    }
+    elseif (strstr($english_paragraph, "<h1>")
+        || strstr($english_paragraph, "<a name")) {
+        RenderMenu($english_paragraph, $spanish_paragraph);
+    } else {
+        RenderParagraph($english_paragraph, $spanish_paragraph);
+    }
 }
 
-function RenderParagraph($index, $english, $spanish)
+function RenderParagraph($englishParagraph, $spanishParagraph)
 {
-    $englishParagraph = $english[$index];
-    $spanishParagraph = $spanish[$index];
-    // images occupy entire table width
-    if (strstr($englishParagraph, "<img src")) {
-        echo <<<EOS
-        <tr><td colSpan="2">
-EOS;
-        echo $englishParagraph;
-        echo <<<EOS
-        </td></tr>
-EOS;
-    } // preserve hyperlinks
-    else if (strstr($englishParagraph, "<h1>")
-        || strstr($englishParagraph, "<a name")) {
-        echo <<<EOS
-        <tr>
-          <td>
-EOS;
-
-        echo $englishParagraph;
-        echo <<<EOS
-            </td>
-          <td>
-EOS;
-        echo $spanishParagraph;
-        echo <<<EOS
-            </td>
-        </tr>
-EOS;
-    } else {
-        echo <<<EOS
+    echo <<<EOS
         <tr>
           <td class="english-paragraph">
-EOS;
-
-        echo $englishParagraph;
-        echo <<<EOS
-            </td>
+            $englishParagraph
+          </td>
           <td class="spanish-paragraph">
+            $spanishParagraph
+          </td>
+        </tr>
 EOS;
-        echo $spanishParagraph;
-        echo <<<EOS
+}
+
+function RenderImage($source, $caption){
+
+    echo <<<EOS
+        <tr>
+            <td colSpan="2">
+                <figure>
+                    <img src="$source"
+                         alt="$caption">
+                    <figcaption>$caption</figcaption>
+                </figure>
             </td>
         </tr>
 EOS;
-    }
+}
+
+function RenderMenu($englishMenu, $spanishMenu) {
+    echo <<<EOS
+        <tr>
+          <td>
+            $englishMenu
+          </td>
+          <td>
+            $spanishMenu
+          </td>
+        </tr>
+EOS;
 }
 
 
