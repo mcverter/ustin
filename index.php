@@ -16,17 +16,20 @@ echo <<<EOS
             font-weight: 700;
             font-size: 250%;
         }
+
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
         }
+
         .photo {
             margin: 25px;
             padding: 15px;
             border: 3px maroon solid;
         }
+
         table {
             border: 7px solid black;
         }
@@ -40,6 +43,7 @@ echo <<<EOS
         td {
             padding: 10px;
         }
+
         td.english-paragraph {
             border: 5px solid #001aa0;
         }
@@ -47,49 +51,60 @@ echo <<<EOS
         td.spanish-paragraph {
             border: 5px solid #d30731;
         }
+
         p {
             margin: 20px;
             text-indent: 10px;
         }
+
         p::first-letter {
             font-size: 200%;
             font-weight: 700;
         }
+
         div {
             margin: 20px;
             border: 1px dotted gray;
         }
+
         p {
             margin: 0;
         }
+
         body {
             font-size: 150%;
             width: 80%;
             margin: auto;
             font-weight: 500;
         }
+
         .two-column {
             border: 2px solid black;
             display: flex;
             flex-direction: row;
         }
+
         .english {
             border: 5px solid #001aa0;
             flex-grow: 1;
             width: 45%
         }
+
         .spanish {
             border: 5px solid #d30731;
             flex-grow: 1;
             width: 45%
         }
+
         blockquote {
             border: 5px solid maroon;
         }
+
         .michaelangelo {
-            text-align:center;
+            text-align: center;
             border: 5px solid maroon;
         }
+
         figcaption {
             background-color: #222;
             color: #fff;
@@ -99,76 +114,59 @@ echo <<<EOS
             margin: 15px;
             font-weight: 900;
         }
-    </style>
+
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+/*            background-color: #eee;
+            color: #444; */
+            margin: 20px;
+        background-color: #d30731; 
+        color: #001aa0;
+        font-weight: 900;
+        font-size: 200%;
+
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover {
+            background-color: #ccc; 
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .collapsible-content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1; 
+        }
+            
+      </style>
 </head>
 <body>
 
- <!-- Accordion tests --
-  <style>
-    .accordionItem h2 { margin: 0; font-size: 1.1em; padding: 0.4em; color: #fff; background-color: #944; border-bottom: 1px solid #66d; }
-    .accordionItem h2:hover { cursor: pointer; }
-    .accordionItem div  { margin: 0; padding: 1em 0.4em; background-color: #eef; border-bottom: 1px solid #66d; }
-    .accordionItem.hide  h2  { color: #000; background-color: #88f; }
-    .accordionItem hide div  { display: none; }
-  </style>
-  
-<div class="accordionItem">
-  <h2>About accordions</h2>
-  <div>
-    <p> hello world </p>
-    <p>gOODBYE world</p>
-  </div>
-</div>
-
-<script type="text/javascript">
-  var accordionItems = new Array();
-  function init() {
-  // Grab accordion items
-  var divs = document.getElementsByTagName('div');
-  for (var i = 0; i < divs.length; i++) {
-		 if (divs[i].className === 'accordionItem'){
-			accordionItems.push(divs[i]);
-		 }	 
-	}
-	accordionItems.forEach(item, function() {
-		var h2 = getFirstChildWithTagName(item, 'h2');
-		h2.onclick=toggleItem;
-	});
-  }
-  function toggleItem() {
-	  var itemClass = this.parentNode.className;
-	  accordionItems.forEach(item, function(item) {
-		item.className = "accordionItem hide";
-	  }
-	  if (itemClass = "accordionItem.hide") {
-		this.parentNode.className = "accordionItem")
-	  }
-  }
-  
-  function getFirstChildWithTagName(element, tagname){
-	  element.childNodes.forEach(node, function(node) {
-		return node.nodeName === tagName ?
-			node : null;
-	  }
-  }
-</script>
-
-<!-- aCCORDION TESTS -->
- 
-
-
-
 <div id="declaration-of-translation">
-    <div id="kreyol-explanation"
+    <button type="button" class="collapsible bluered">
+        Deklarasyon Tradiksyon
+    </button>
+    <div id="kreyol-explanation" class="collapsible-content"
          style="background-color: #001aa0; color:white; font-weight: 900">
         <div class="michaelangelo">
-            <blockquote> "Eskilti a deja konplè nan blòk an mab, anvan mwen kòmanse travay mwen. Li deja la, mwen jis gen taye lwen materyèl yo initil. "</blockquote>
+            <blockquote> "Eskilti a deja konplè nan blòk an mab, anvan mwen kòmanse travay mwen. Li deja la, mwen jis
+                gen taye lwen materyèl yo initil. "
+            </blockquote>
             <cite>Michaelangelo</cite>
         </div>
 
         <div id="kreole-draft-explanation">
             <div>
-                <p>Tradiksyon - oswa nenpòt ki ekri - se tankou polisaj yon Damian, ak chak pas, yon sèl lis sou sifas la ak klere klere la</p>
+                <p>Tradiksyon - oswa nenpòt ki ekri - se tankou polisaj yon Damian, ak chak pas, yon sèl lis sou sifas
+                    la ak klere klere la</p>
             </div>
 
             <p>Mwen travay nan repetisyon. Sa a gen anpil</p>
@@ -203,20 +201,25 @@ Ki kote ka pousyè leve?
 
     </div>
 
-    <div class="photo">
-        <figure>
-            <img src="images/haiticoat.jpeg" />
+        <figure style="margin: auto; width:30%" >
+            <img src="images/haiticoat.jpeg"   />
         </figure>
-    </div>
 
-    <div id="english-explanation" style="background-color: #d30731; color:white; font-weight: 900">
+    <button type="button" class="collapsible redblue">
+        Declaration of Translation
+    </button>
+
+    <div id="english-explanation" class="collapsible-content" style="background-color: #d30731; color:white; font-weight: 900">
         <div class="michaelangelo">
-            <blockquote> “The sculpture is already complete within the marble block, before I start my work. It is already there, I just have to chisel away the superfluous material.”</blockquote>
+            <blockquote> “The sculpture is already complete within the marble block, before I start my work. It is
+                already there, I just have to chisel away the superfluous material.”
+            </blockquote>
             <cite>Michaelangelo</cite>
         </div>
 
         <div id="english-draft-explanation">
-            <div> <p>translation -- or any writing -- is like polishing a diamond, with each pass, one smooths out the surface and brightens the shine</p>
+            <div><p>translation -- or any writing -- is like polishing a diamond, with each pass, one smooths out the
+                surface and brightens the shine</p>
             </div>
 
             <p>I work in repetitions. This contains many</p>
@@ -252,11 +255,34 @@ Where could dust arise?
 </div>
 
 
-<div id="bilingual-container" />
 
-        <div>
-          <table>
-            <tbody>
+<script>
+    var collapsible = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < collapsible.length; i++) {
+        collapsible[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            console.log(content, this, content.style.display);
+
+            if (content.style.display === "block") {
+                content.style.display = "none"
+            } else {
+                content.style.display = "block"
+            }
+        })
+    }
+</script>
+
+
+
+
+<div id="bilingual-container"/>
+
+<div>
+    <table>
+        <tbody>
 
 EOS;
 
@@ -278,12 +304,11 @@ for ($i = 0; $i < $english_length; $i++) {
 
     if (strstr($english_paragraph, "<img src")) {
         $match = [];
-        preg_match('/"(.*)"/',$english_paragraph,$match);
+        preg_match('/"(.*)"/', $english_paragraph, $match);
         $url = $match[1];
         $caption = $english_paragraphs[++$i];
         RenderImage($url, $caption);
-    }
-    elseif (strstr($english_paragraph, "<h1>")
+    } elseif (strstr($english_paragraph, "<h1>")
         || strstr($english_paragraph, "<a name")) {
         RenderMenu($english_paragraph, $spanish_paragraph);
     } else {
@@ -305,7 +330,8 @@ function RenderParagraph($englishParagraph, $spanishParagraph)
 EOS;
 }
 
-function RenderImage($source, $caption){
+function RenderImage($source, $caption)
+{
 
     echo <<<EOS
         <tr>
@@ -320,7 +346,8 @@ function RenderImage($source, $caption){
 EOS;
 }
 
-function RenderMenu($englishMenu, $spanishMenu) {
+function RenderMenu($englishMenu, $spanishMenu)
+{
     echo <<<EOS
         <tr>
           <td>
