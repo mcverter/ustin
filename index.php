@@ -201,7 +201,7 @@ Ki kote ka pousyè leve?
 
     </div>
 
-        <figure style="margin: auto; width:50%" >
+        <figure style="margin: auto; width:30%" >
             <img src="images/haiticoat.jpeg"   />
         </figure>
 
