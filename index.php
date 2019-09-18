@@ -103,6 +103,61 @@ echo <<<EOS
 </head>
 <body>
 
+ <!-- Accordion tests --
+  <style>
+    .accordionItem h2 { margin: 0; font-size: 1.1em; padding: 0.4em; color: #fff; background-color: #944; border-bottom: 1px solid #66d; }
+    .accordionItem h2:hover { cursor: pointer; }
+    .accordionItem div  { margin: 0; padding: 1em 0.4em; background-color: #eef; border-bottom: 1px solid #66d; }
+    .accordionItem.hide  h2  { color: #000; background-color: #88f; }
+    .accordionItem hide div  { display: none; }
+  </style>
+  
+<div class="accordionItem">
+  <h2>About accordions</h2>
+  <div>
+    <p> hello world </p>
+    <p>gOODBYE world</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var accordionItems = new Array();
+  function init() {
+  // Grab accordion items
+  var divs = document.getElementsByTagName('div');
+  for (var i = 0; i < divs.length; i++) {
+		 if (divs[i].className === 'accordionItem'){
+			accordionItems.push(divs[i]);
+		 }	 
+	}
+	accordionItems.forEach(item, function() {
+		var h2 = getFirstChildWithTagName(item, 'h2');
+		h2.onclick=toggleItem;
+	});
+  }
+  function toggleItem() {
+	  var itemClass = this.parentNode.className;
+	  accordionItems.forEach(item, function(item) {
+		item.className = "accordionItem hide";
+	  }
+	  if (itemClass = "accordionItem.hide") {
+		this.parentNode.className = "accordionItem")
+	  }
+  }
+  
+  function getFirstChildWithTagName(element, tagname){
+	  element.childNodes.forEach(node, function(node) {
+		return node.nodeName === tagName ?
+			node : null;
+	  }
+  }
+</script>
+
+<!-- aCCORDION TESTS -->
+ 
+
+
+
 <div id="declaration-of-translation">
     <div id="kreyol-explanation"
          style="background-color: #001aa0; color:white; font-weight: 900">
