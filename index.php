@@ -119,9 +119,11 @@ echo <<<EOS
         .collapsible {
 /*            background-color: #eee;
             color: #444; */
+            margin: 20px;
         background-color: #d30731; 
         color: #001aa0;
         font-weight: 900;
+        font-size: 200%;
 
             cursor: pointer;
             padding: 18px;
@@ -129,7 +131,6 @@ echo <<<EOS
             border: none;
             text-align: left;
             outline: none;
-            font-size: 15px;
         }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -200,11 +201,9 @@ Ki kote ka pousyè leve?
 
     </div>
 
-    <div class="photo">
-        <figure>
-            <img src="images/haiticoat.jpeg"  width="50%" />
+        <figure style="margin: auto; width:50%" >
+            <img src="images/haiticoat.jpeg"   />
         </figure>
-    </div>
 
     <button type="button" class="collapsible redblue">
         Declaration of Translation
