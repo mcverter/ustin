@@ -117,11 +117,7 @@ echo <<<EOS
 
         /* Style the button that is used to open and close the collapsible content */
         .collapsible {
-/*            background-color: #eee;
-            color: #444; */
             margin: 20px;
-        background-color: #d30731; 
-        color: #001aa0;
         font-weight: 900;
         font-size: 200%;
 
@@ -134,8 +130,14 @@ echo <<<EOS
         }
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-        .active, .collapsible:hover {
-            background-color: #ccc; 
+        .active.redblue, .redblue.collapsible:hover {
+            color: #001aa0;
+            background-color: #d30731;
+        }
+
+       .active.bluered, .bluered.collapsible:hover {
+            color: #d30731;
+            background-color: #001aa0;
         }
 
         /* Style the collapsible content. Note: hidden by default */
@@ -145,13 +147,23 @@ echo <<<EOS
             overflow: hidden;
             background-color: #f1f1f1; 
         }
+        
+        .redblue {
+        color: #d30731;
+        background-color: #001aa0;
+        }
+        
+        .bluered {
+        color: #001aa0;
+        background-color: #d30731;
+        }
             
       </style>
 </head>
 <body>
 
 <div id="declaration-of-translation">
-    <button type="button" class="collapsible bluered">
+    <button type="button" class="collapsible redblue">
         Deklarasyon Tradiksyon
     </button>
     <div id="kreyol-explanation" class="collapsible-content"
@@ -205,7 +217,7 @@ Ki kote ka pousyè leve?
             <img src="images/haiticoat.jpeg"   />
         </figure>
 
-    <button type="button" class="collapsible redblue">
+    <button type="button" class="collapsible bluered">
         Declaration of Translation
     </button>
 
