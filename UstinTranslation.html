@@ -96,152 +96,152 @@
             border: 5px solid maroon;
         }
     </style>
-<!--    <script>"use strict";
+    <!--    <script>"use strict";
 
-    var _createClass = function () {
-        function defineProperties(target, props) {
-            for (var i = 0; i < props.length; i++) {
-                var descriptor = props[i];
-                descriptor.enumerable = descriptor.enumerable || false;
-                descriptor.configurable = true;
-                if ("value" in descriptor) descriptor.writable = true;
-                Object.defineProperty(target, descriptor.key, descriptor);
+        var _createClass = function () {
+            function defineProperties(target, props) {
+                for (var i = 0; i < props.length; i++) {
+                    var descriptor = props[i];
+                    descriptor.enumerable = descriptor.enumerable || false;
+                    descriptor.configurable = true;
+                    if ("value" in descriptor) descriptor.writable = true;
+                    Object.defineProperty(target, descriptor.key, descriptor);
+                }
             }
-        }
 
-        return function (Constructor, protoProps, staticProps) {
-            if (protoProps) defineProperties(Constructor.prototype, protoProps);
-            if (staticProps) defineProperties(Constructor, staticProps);
-            return Constructor;
-        };
-    }();
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    function _possibleConstructorReturn(self, call) {
-        if (!self) {
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        }
-        return call && (typeof call === "object" || typeof call === "function") ? call : self;
-    }
-
-    function _inherits(subClass, superClass) {
-        if (typeof superClass !== "function" && superClass !== null) {
-            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-        }
-        subClass.prototype = Object.create(superClass && superClass.prototype, {
-            constructor: {
-                value: subClass,
-                enumerable: false,
-                writable: true,
-                configurable: true
-            }
-        });
-        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-    }
-
-    function RenderParagraph(englishParagraph, index, english, spanish) {
-        // images occupy entire table width
-        if (englishParagraph.startsWith("<img src")) {
-            return React.createElement(
-                "tr",
-                {key: index},
-                React.createElement("td", {dangerouslySetInnerHTML: {__html: englishParagraph}, colSpan: "2"})
-            );
-        }
-        // preserve hyperlinks
-        else if (englishParagraph.startsWith("<h1>") || englishParagraph.startsWith("<a name")) {
-            return React.createElement(
-                "tr",
-                {key: index},
-                React.createElement("td", {dangerouslySetInnerHTML: {__html: englishParagraph}}),
-                React.createElement("td", {dangerouslySetInnerHTML: {__html: spanish[index]}})
-            );
-        } else {
-            return React.createElement(
-                "tr",
-                {key: index},
-                React.createElement(
-                    "td",
-                    {className: "english-paragraph"},
-                    englishParagraph
-                ),
-                React.createElement(
-                    "td",
-                    {className: "spanish-paragraph"},
-                    spanish[index]
-                )
-            );
-        }
-    }
-
-    var BilingualContent = function (_React$Component) {
-        _inherits(BilingualContent, _React$Component);
-
-        function BilingualContent(props) {
-            _classCallCheck(this, BilingualContent);
-
-            var _this = _possibleConstructorReturn(this, (BilingualContent.__proto__ || Object.getPrototypeOf(BilingualContent)).call(this, props));
-
-            _this.state = {
-                english: [],
-                spanish: []
+            return function (Constructor, protoProps, staticProps) {
+                if (protoProps) defineProperties(Constructor.prototype, protoProps);
+                if (staticProps) defineProperties(Constructor, staticProps);
+                return Constructor;
             };
-            return _this;
+        }();
+
+        function _classCallCheck(instance, Constructor) {
+            if (!(instance instanceof Constructor)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
         }
 
-        _createClass(BilingualContent, [{
-            key: "componentDidMount",
-            value: function componentDidMount() {
-                var _this2 = this;
-
-                fetch("./spanish.json").then(function (response) {
-                    return response.json();
-                }).then(function (json) {
-                    _this2.setState({"spanish": json});
-                });
-                fetch("./english.json").then(function (response) {
-                    return response.json();
-                }).then(function (json) {
-                    _this2.setState({"english": json});
-                });
+        function _possibleConstructorReturn(self, call) {
+            if (!self) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             }
-        }, {
-            key: "render",
-            value: function render() {
-                var _state = this.state,
-                    english = _state.english,
-                    spanish = _state.spanish;
+            return call && (typeof call === "object" || typeof call === "function") ? call : self;
+        }
 
-                console.log('render english and spanish', english, spanish);
+        function _inherits(subClass, superClass) {
+            if (typeof superClass !== "function" && superClass !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+            }
+            subClass.prototype = Object.create(superClass && superClass.prototype, {
+                constructor: {
+                    value: subClass,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+        }
+
+        function RenderParagraph(englishParagraph, index, english, spanish) {
+            // images occupy entire table width
+            if (englishParagraph.startsWith("<img src")) {
                 return React.createElement(
-                    "div",
-                    null,
+                    "tr",
+                    {key: index},
+                    React.createElement("td", {dangerouslySetInnerHTML: {__html: englishParagraph}, colSpan: "2"})
+                );
+            }
+            // preserve hyperlinks
+            else if (englishParagraph.startsWith("<h1>") || englishParagraph.startsWith("<a name")) {
+                return React.createElement(
+                    "tr",
+                    {key: index},
+                    React.createElement("td", {dangerouslySetInnerHTML: {__html: englishParagraph}}),
+                    React.createElement("td", {dangerouslySetInnerHTML: {__html: spanish[index]}})
+                );
+            } else {
+                return React.createElement(
+                    "tr",
+                    {key: index},
                     React.createElement(
-                        "table",
-                        null,
-                        React.createElement(
-                            "tbody",
-                            null,
-                            english.map(function (englishParagraph, index) {
-                                return RenderParagraph(englishParagraph, index, english, spanish);
-                            })
-                        )
+                        "td",
+                        {className: "english-paragraph"},
+                        englishParagraph
+                    ),
+                    React.createElement(
+                        "td",
+                        {className: "spanish-paragraph"},
+                        spanish[index]
                     )
                 );
             }
-        }]);
+        }
 
-        return BilingualContent;
-    }(React.Component);
+        var BilingualContent = function (_React$Component) {
+            _inherits(BilingualContent, _React$Component);
 
-    var domContainer = document.querySelector('#bilingual-container');
-    ReactDOM.render(React.createElement(BilingualContent, null), domContainer);
-    //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklubGluZSBCYWJlbCBzY3JpcHQiXSwibmFtZXMiOlsiUmVuZGVyUGFyYWdyYXBoIiwiZW5nbGlzaFBhcmFncmFwaCIsImluZGV4IiwiZW5nbGlzaCIsInNwYW5pc2giLCJzdGFydHNXaXRoIiwiX19odG1sIiwiQmlsaW5ndWFsQ29udGVudCIsInByb3BzIiwic3RhdGUiLCJmZXRjaCIsInRoZW4iLCJyZXNwb25zZSIsImpzb24iLCJzZXRTdGF0ZSIsImNvbnNvbGUiLCJsb2ciLCJtYXAiLCJSZWFjdCIsIkNvbXBvbmVudCIsImRvbUNvbnRhaW5lciIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsIlJlYWN0RE9NIiwicmVuZGVyIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQ0UsU0FBU0EsZUFBVCxDQUF5QkMsZ0JBQXpCLEVBQTJDQyxLQUEzQyxFQUFrREMsT0FBbEQsRUFBMkRDLE9BQTNELEVBQW9FO0FBQ25FO0FBQ0MsTUFBSUgsaUJBQWlCSSxVQUFqQixDQUE0QixVQUE1QixDQUFKLEVBQTZDO0FBQzNDLFdBQ0U7QUFBQTtBQUFBLFFBQUksS0FBS0gsS0FBVDtBQUNFLGtDQUFJLHlCQUF5QixFQUFDSSxRQUFRTCxnQkFBVCxFQUE3QixFQUF5RCxTQUFRLEdBQWpFO0FBREYsS0FERjtBQUtEO0FBQ0Q7QUFQQSxPQVFLLElBQUlBLGlCQUFpQkksVUFBakIsQ0FBNEIsTUFBNUIsS0FDSkosaUJBQWlCSSxVQUFqQixDQUE0QixTQUE1QixDQURBLEVBQ3dDO0FBQzNDLGFBQ0U7QUFBQTtBQUFBLFVBQUksS0FBS0gsS0FBVDtBQUNFLG9DQUFJLHlCQUF5QixFQUFDSSxRQUFRTCxnQkFBVCxFQUE3QixHQURGO0FBRUUsb0NBQUkseUJBQXlCLEVBQUNLLFFBQVFGLFFBQVFGLEtBQVIsQ0FBVCxFQUE3QjtBQUZGLE9BREY7QUFNRCxLQVJJLE1BU0E7QUFDSCxhQUNFO0FBQUE7QUFBQSxVQUFJLEtBQUtBLEtBQVQ7QUFDRTtBQUFBO0FBQUEsWUFBSSxXQUFVLG1CQUFkO0FBQW1DRDtBQUFuQyxTQURGO0FBRUU7QUFBQTtBQUFBLFlBQUksV0FBVSxtQkFBZDtBQUFtQ0csa0JBQVFGLEtBQVI7QUFBbkM7QUFGRixPQURGO0FBTUQ7QUFDRjs7SUFFS0ssZ0I7OztBQUNKLDRCQUFZQyxLQUFaLEVBQW1CO0FBQUE7O0FBQUEsb0lBQ1hBLEtBRFc7O0FBRWpCLFVBQUtDLEtBQUwsR0FBYTtBQUNYTixlQUFTLEVBREU7QUFFWEMsZUFBUztBQUZFLEtBQWI7QUFGaUI7QUFNbEI7Ozs7d0NBQ2tCO0FBQUE7O0FBQ2pCTSxZQUFNLGdCQUFOLEVBQ0dDLElBREgsQ0FDUyxVQUFDQyxRQUFELEVBQWM7QUFDbkIsZUFBT0EsU0FBU0MsSUFBVCxFQUFQO0FBQ0QsT0FISCxFQUlHRixJQUpILENBSVMsVUFBQ0UsSUFBRCxFQUFVO0FBQ2YsZUFBS0MsUUFBTCxDQUFjLEVBQUMsV0FBV0QsSUFBWixFQUFkO0FBQ0QsT0FOSDtBQU9BSCxZQUFNLGdCQUFOLEVBQ0dDLElBREgsQ0FDUyxVQUFDQyxRQUFELEVBQWM7QUFDbkIsZUFBT0EsU0FBU0MsSUFBVCxFQUFQO0FBQ0QsT0FISCxFQUlHRixJQUpILENBSVMsVUFBQ0UsSUFBRCxFQUFVO0FBQ2YsZUFBS0MsUUFBTCxDQUFjLEVBQUMsV0FBV0QsSUFBWixFQUFkO0FBQ0QsT0FOSDtBQU9EOzs7NkJBRVE7QUFBQSxtQkFDa0IsS0FBS0osS0FEdkI7QUFBQSxVQUNGTixPQURFLFVBQ0ZBLE9BREU7QUFBQSxVQUNPQyxPQURQLFVBQ09BLE9BRFA7O0FBRVBXLGNBQVFDLEdBQVIsQ0FBWSw0QkFBWixFQUEwQ2IsT0FBMUMsRUFBbURDLE9BQW5EO0FBQ0EsYUFDRTtBQUFBO0FBQUE7QUFDRTtBQUFBO0FBQUE7QUFDRTtBQUFBO0FBQUE7QUFDQ0Qsb0JBQVFjLEdBQVIsQ0FBWSxVQUFDaEIsZ0JBQUQsRUFBbUJDLEtBQW5CLEVBQTJCO0FBQ3BDLHFCQUFPRixnQkFBZ0JDLGdCQUFoQixFQUFrQ0MsS0FBbEMsRUFBeUNDLE9BQXpDLEVBQWtEQyxPQUFsRCxDQUFQO0FBQ0QsYUFGRjtBQUREO0FBREY7QUFERixPQURGO0FBWUQ7Ozs7RUF4QzRCYyxNQUFNQyxTOztBQTBDckMsSUFBTUMsZUFBZUMsU0FBU0MsYUFBVCxDQUF1QixzQkFBdkIsQ0FBckI7QUFDQUMsU0FBU0MsTUFBVCxDQUFnQixvQkFBQyxnQkFBRCxPQUFoQixFQUFxQ0osWUFBckMiLCJmaWxlIjoiSW5saW5lIEJhYmVsIHNjcmlwdCIsInNvdXJjZXNDb250ZW50IjpbIlxuICBmdW5jdGlvbiBSZW5kZXJQYXJhZ3JhcGgoZW5nbGlzaFBhcmFncmFwaCwgaW5kZXgsIGVuZ2xpc2gsIHNwYW5pc2gpIHtcbiAgIC8vIGltYWdlcyBvY2N1cHkgZW50aXJlIHRhYmxlIHdpZHRoXG4gICAgaWYgKGVuZ2xpc2hQYXJhZ3JhcGguc3RhcnRzV2l0aChcIjxpbWcgc3JjXCIpKSB7XG4gICAgICByZXR1cm4oXG4gICAgICAgIDx0ciBrZXk9e2luZGV4fT5cbiAgICAgICAgICA8dGQgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw9e3tfX2h0bWw6IGVuZ2xpc2hQYXJhZ3JhcGh9fSBjb2xTcGFuPVwiMlwiIC8+XG4gICAgICAgIDwvdHI+XG4gICAgICApXG4gICAgfVxuICAgIC8vIHByZXNlcnZlIGh5cGVybGlua3NcbiAgICBlbHNlIGlmIChlbmdsaXNoUGFyYWdyYXBoLnN0YXJ0c1dpdGgoXCI8aDE+XCIpXG4gICAgICB8fCBlbmdsaXNoUGFyYWdyYXBoLnN0YXJ0c1dpdGgoXCI8YSBuYW1lXCIpKSB7XG4gICAgICByZXR1cm4oXG4gICAgICAgIDx0ciBrZXk9e2luZGV4fT5cbiAgICAgICAgICA8dGQgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw9e3tfX2h0bWw6IGVuZ2xpc2hQYXJhZ3JhcGh9fS8+XG4gICAgICAgICAgPHRkIGRhbmdlcm91c2x5U2V0SW5uZXJIVE1MPXt7X19odG1sOiBzcGFuaXNoW2luZGV4XX19Lz5cbiAgICAgICAgPC90cj5cbiAgICAgIClcbiAgICB9XG4gICAgZWxzZSB7XG4gICAgICByZXR1cm4gKFxuICAgICAgICA8dHIga2V5PXtpbmRleH0+XG4gICAgICAgICAgPHRkIGNsYXNzTmFtZT1cImVuZ2xpc2gtcGFyYWdyYXBoXCI+e2VuZ2xpc2hQYXJhZ3JhcGh9PC90ZD5cbiAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwic3BhbmlzaC1wYXJhZ3JhcGhcIj57c3BhbmlzaFtpbmRleF19PC90ZD5cbiAgICAgICAgPC90cj5cbiAgICAgIClcbiAgICB9XG4gIH1cblxuICBjbGFzcyBCaWxpbmd1YWxDb250ZW50IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcykge1xuICAgICAgc3VwZXIocHJvcHMpO1xuICAgICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgICAgZW5nbGlzaDogW10sXG4gICAgICAgIHNwYW5pc2g6IFtdXG4gICAgICB9XG4gICAgfVxuICAgIGNvbXBvbmVudERpZE1vdW50KCl7XG4gICAgICBmZXRjaChcIi4vc3BhbmlzaC5qc29uXCIpXG4gICAgICAgIC50aGVuKCAocmVzcG9uc2UpID0+IHtcbiAgICAgICAgICByZXR1cm4gcmVzcG9uc2UuanNvbigpXG4gICAgICAgIH0pXG4gICAgICAgIC50aGVuKCAoanNvbikgPT4ge1xuICAgICAgICAgIHRoaXMuc2V0U3RhdGUoe1wic3BhbmlzaFwiOiBqc29ufSk7XG4gICAgICAgIH0pO1xuICAgICAgZmV0Y2goXCIuL2VuZ2xpc2guanNvblwiKVxuICAgICAgICAudGhlbiggKHJlc3BvbnNlKSA9PiB7XG4gICAgICAgICAgcmV0dXJuIHJlc3BvbnNlLmpzb24oKVxuICAgICAgICB9KVxuICAgICAgICAudGhlbiggKGpzb24pID0+IHtcbiAgICAgICAgICB0aGlzLnNldFN0YXRlKHtcImVuZ2xpc2hcIjoganNvbn0pO1xuICAgICAgICB9KTtcbiAgICB9XG5cbiAgICByZW5kZXIoKSB7XG4gICAgICBsZXQge2VuZ2xpc2gsIHNwYW5pc2h9ID0gdGhpcy5zdGF0ZTtcbiAgICAgIGNvbnNvbGUubG9nKCdyZW5kZXIgZW5nbGlzaCBhbmQgc3BhbmlzaCcsIGVuZ2xpc2gsIHNwYW5pc2gpO1xuICAgICAgcmV0dXJuIChcbiAgICAgICAgPGRpdj5cbiAgICAgICAgICA8dGFibGU+XG4gICAgICAgICAgICA8dGJvZHk+XG4gICAgICAgICAgICB7ZW5nbGlzaC5tYXAoKGVuZ2xpc2hQYXJhZ3JhcGgsIGluZGV4KT0+e1xuICAgICAgICAgICAgICAgIHJldHVybiBSZW5kZXJQYXJhZ3JhcGgoZW5nbGlzaFBhcmFncmFwaCwgaW5kZXgsIGVuZ2xpc2gsIHNwYW5pc2gpO1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICApfVxuICAgICAgICAgICAgPC90Ym9keT5cbiAgICAgICAgICA8L3RhYmxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIClcbiAgICB9XG4gIH1cbiAgY29uc3QgZG9tQ29udGFpbmVyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI2JpbGluZ3VhbC1jb250YWluZXInKTtcbiAgUmVhY3RET00ucmVuZGVyKDxCaWxpbmd1YWxDb250ZW50Lz4sIGRvbUNvbnRhaW5lcik7XG5cbiJdfQ==</script>-->
+            function BilingualContent(props) {
+                _classCallCheck(this, BilingualContent);
+
+                var _this = _possibleConstructorReturn(this, (BilingualContent.__proto__ || Object.getPrototypeOf(BilingualContent)).call(this, props));
+
+                _this.state = {
+                    english: [],
+                    spanish: []
+                };
+                return _this;
+            }
+
+            _createClass(BilingualContent, [{
+                key: "componentDidMount",
+                value: function componentDidMount() {
+                    var _this2 = this;
+
+                    fetch("./spanish.json").then(function (response) {
+                        return response.json();
+                    }).then(function (json) {
+                        _this2.setState({"spanish": json});
+                    });
+                    fetch("./english.json").then(function (response) {
+                        return response.json();
+                    }).then(function (json) {
+                        _this2.setState({"english": json});
+                    });
+                }
+            }, {
+                key: "render",
+                value: function render() {
+                    var _state = this.state,
+                        english = _state.english,
+                        spanish = _state.spanish;
+
+                    console.log('render english and spanish', english, spanish);
+                    return React.createElement(
+                        "div",
+                        null,
+                        React.createElement(
+                            "table",
+                            null,
+                            React.createElement(
+                                "tbody",
+                                null,
+                                english.map(function (englishParagraph, index) {
+                                    return RenderParagraph(englishParagraph, index, english, spanish);
+                                })
+                            )
+                        )
+                    );
+                }
+            }]);
+
+            return BilingualContent;
+        }(React.Component);
+
+        var domContainer = document.querySelector('#bilingual-container');
+        ReactDOM.render(React.createElement(BilingualContent, null), domContainer);
+        //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIklubGluZSBCYWJlbCBzY3JpcHQiXSwibmFtZXMiOlsiUmVuZGVyUGFyYWdyYXBoIiwiZW5nbGlzaFBhcmFncmFwaCIsImluZGV4IiwiZW5nbGlzaCIsInNwYW5pc2giLCJzdGFydHNXaXRoIiwiX19odG1sIiwiQmlsaW5ndWFsQ29udGVudCIsInByb3BzIiwic3RhdGUiLCJmZXRjaCIsInRoZW4iLCJyZXNwb25zZSIsImpzb24iLCJzZXRTdGF0ZSIsImNvbnNvbGUiLCJsb2ciLCJtYXAiLCJSZWFjdCIsIkNvbXBvbmVudCIsImRvbUNvbnRhaW5lciIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsIlJlYWN0RE9NIiwicmVuZGVyIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQ0UsU0FBU0EsZUFBVCxDQUF5QkMsZ0JBQXpCLEVBQTJDQyxLQUEzQyxFQUFrREMsT0FBbEQsRUFBMkRDLE9BQTNELEVBQW9FO0FBQ25FO0FBQ0MsTUFBSUgsaUJBQWlCSSxVQUFqQixDQUE0QixVQUE1QixDQUFKLEVBQTZDO0FBQzNDLFdBQ0U7QUFBQTtBQUFBLFFBQUksS0FBS0gsS0FBVDtBQUNFLGtDQUFJLHlCQUF5QixFQUFDSSxRQUFRTCxnQkFBVCxFQUE3QixFQUF5RCxTQUFRLEdBQWpFO0FBREYsS0FERjtBQUtEO0FBQ0Q7QUFQQSxPQVFLLElBQUlBLGlCQUFpQkksVUFBakIsQ0FBNEIsTUFBNUIsS0FDSkosaUJBQWlCSSxVQUFqQixDQUE0QixTQUE1QixDQURBLEVBQ3dDO0FBQzNDLGFBQ0U7QUFBQTtBQUFBLFVBQUksS0FBS0gsS0FBVDtBQUNFLG9DQUFJLHlCQUF5QixFQUFDSSxRQUFRTCxnQkFBVCxFQUE3QixHQURGO0FBRUUsb0NBQUkseUJBQXlCLEVBQUNLLFFBQVFGLFFBQVFGLEtBQVIsQ0FBVCxFQUE3QjtBQUZGLE9BREY7QUFNRCxLQVJJLE1BU0E7QUFDSCxhQUNFO0FBQUE7QUFBQSxVQUFJLEtBQUtBLEtBQVQ7QUFDRTtBQUFBO0FBQUEsWUFBSSxXQUFVLG1CQUFkO0FBQW1DRDtBQUFuQyxTQURGO0FBRUU7QUFBQTtBQUFBLFlBQUksV0FBVSxtQkFBZDtBQUFtQ0csa0JBQVFGLEtBQVI7QUFBbkM7QUFGRixPQURGO0FBTUQ7QUFDRjs7SUFFS0ssZ0I7OztBQUNKLDRCQUFZQyxLQUFaLEVBQW1CO0FBQUE7O0FBQUEsb0lBQ1hBLEtBRFc7O0FBRWpCLFVBQUtDLEtBQUwsR0FBYTtBQUNYTixlQUFTLEVBREU7QUFFWEMsZUFBUztBQUZFLEtBQWI7QUFGaUI7QUFNbEI7Ozs7d0NBQ2tCO0FBQUE7O0FBQ2pCTSxZQUFNLGdCQUFOLEVBQ0dDLElBREgsQ0FDUyxVQUFDQyxRQUFELEVBQWM7QUFDbkIsZUFBT0EsU0FBU0MsSUFBVCxFQUFQO0FBQ0QsT0FISCxFQUlHRixJQUpILENBSVMsVUFBQ0UsSUFBRCxFQUFVO0FBQ2YsZUFBS0MsUUFBTCxDQUFjLEVBQUMsV0FBV0QsSUFBWixFQUFkO0FBQ0QsT0FOSDtBQU9BSCxZQUFNLGdCQUFOLEVBQ0dDLElBREgsQ0FDUyxVQUFDQyxRQUFELEVBQWM7QUFDbkIsZUFBT0EsU0FBU0MsSUFBVCxFQUFQO0FBQ0QsT0FISCxFQUlHRixJQUpILENBSVMsVUFBQ0UsSUFBRCxFQUFVO0FBQ2YsZUFBS0MsUUFBTCxDQUFjLEVBQUMsV0FBV0QsSUFBWixFQUFkO0FBQ0QsT0FOSDtBQU9EOzs7NkJBRVE7QUFBQSxtQkFDa0IsS0FBS0osS0FEdkI7QUFBQSxVQUNGTixPQURFLFVBQ0ZBLE9BREU7QUFBQSxVQUNPQyxPQURQLFVBQ09BLE9BRFA7O0FBRVBXLGNBQVFDLEdBQVIsQ0FBWSw0QkFBWixFQUEwQ2IsT0FBMUMsRUFBbURDLE9BQW5EO0FBQ0EsYUFDRTtBQUFBO0FBQUE7QUFDRTtBQUFBO0FBQUE7QUFDRTtBQUFBO0FBQUE7QUFDQ0Qsb0JBQVFjLEdBQVIsQ0FBWSxVQUFDaEIsZ0JBQUQsRUFBbUJDLEtBQW5CLEVBQTJCO0FBQ3BDLHFCQUFPRixnQkFBZ0JDLGdCQUFoQixFQUFrQ0MsS0FBbEMsRUFBeUNDLE9BQXpDLEVBQWtEQyxPQUFsRCxDQUFQO0FBQ0QsYUFGRjtBQUREO0FBREY7QUFERixPQURGO0FBWUQ7Ozs7RUF4QzRCYyxNQUFNQyxTOztBQTBDckMsSUFBTUMsZUFBZUMsU0FBU0MsYUFBVCxDQUF1QixzQkFBdkIsQ0FBckI7QUFDQUMsU0FBU0MsTUFBVCxDQUFnQixvQkFBQyxnQkFBRCxPQUFoQixFQUFxQ0osWUFBckMiLCJmaWxlIjoiSW5saW5lIEJhYmVsIHNjcmlwdCIsInNvdXJjZXNDb250ZW50IjpbIlxuICBmdW5jdGlvbiBSZW5kZXJQYXJhZ3JhcGgoZW5nbGlzaFBhcmFncmFwaCwgaW5kZXgsIGVuZ2xpc2gsIHNwYW5pc2gpIHtcbiAgIC8vIGltYWdlcyBvY2N1cHkgZW50aXJlIHRhYmxlIHdpZHRoXG4gICAgaWYgKGVuZ2xpc2hQYXJhZ3JhcGguc3RhcnRzV2l0aChcIjxpbWcgc3JjXCIpKSB7XG4gICAgICByZXR1cm4oXG4gICAgICAgIDx0ciBrZXk9e2luZGV4fT5cbiAgICAgICAgICA8dGQgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw9e3tfX2h0bWw6IGVuZ2xpc2hQYXJhZ3JhcGh9fSBjb2xTcGFuPVwiMlwiIC8+XG4gICAgICAgIDwvdHI+XG4gICAgICApXG4gICAgfVxuICAgIC8vIHByZXNlcnZlIGh5cGVybGlua3NcbiAgICBlbHNlIGlmIChlbmdsaXNoUGFyYWdyYXBoLnN0YXJ0c1dpdGgoXCI8aDE+XCIpXG4gICAgICB8fCBlbmdsaXNoUGFyYWdyYXBoLnN0YXJ0c1dpdGgoXCI8YSBuYW1lXCIpKSB7XG4gICAgICByZXR1cm4oXG4gICAgICAgIDx0ciBrZXk9e2luZGV4fT5cbiAgICAgICAgICA8dGQgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw9e3tfX2h0bWw6IGVuZ2xpc2hQYXJhZ3JhcGh9fS8+XG4gICAgICAgICAgPHRkIGRhbmdlcm91c2x5U2V0SW5uZXJIVE1MPXt7X19odG1sOiBzcGFuaXNoW2luZGV4XX19Lz5cbiAgICAgICAgPC90cj5cbiAgICAgIClcbiAgICB9XG4gICAgZWxzZSB7XG4gICAgICByZXR1cm4gKFxuICAgICAgICA8dHIga2V5PXtpbmRleH0+XG4gICAgICAgICAgPHRkIGNsYXNzTmFtZT1cImVuZ2xpc2gtcGFyYWdyYXBoXCI+e2VuZ2xpc2hQYXJhZ3JhcGh9PC90ZD5cbiAgICAgICAgICA8dGQgY2xhc3NOYW1lPVwic3BhbmlzaC1wYXJhZ3JhcGhcIj57c3BhbmlzaFtpbmRleF19PC90ZD5cbiAgICAgICAgPC90cj5cbiAgICAgIClcbiAgICB9XG4gIH1cblxuICBjbGFzcyBCaWxpbmd1YWxDb250ZW50IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcykge1xuICAgICAgc3VwZXIocHJvcHMpO1xuICAgICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgICAgZW5nbGlzaDogW10sXG4gICAgICAgIHNwYW5pc2g6IFtdXG4gICAgICB9XG4gICAgfVxuICAgIGNvbXBvbmVudERpZE1vdW50KCl7XG4gICAgICBmZXRjaChcIi4vc3BhbmlzaC5qc29uXCIpXG4gICAgICAgIC50aGVuKCAocmVzcG9uc2UpID0+IHtcbiAgICAgICAgICByZXR1cm4gcmVzcG9uc2UuanNvbigpXG4gICAgICAgIH0pXG4gICAgICAgIC50aGVuKCAoanNvbikgPT4ge1xuICAgICAgICAgIHRoaXMuc2V0U3RhdGUoe1wic3BhbmlzaFwiOiBqc29ufSk7XG4gICAgICAgIH0pO1xuICAgICAgZmV0Y2goXCIuL2VuZ2xpc2guanNvblwiKVxuICAgICAgICAudGhlbiggKHJlc3BvbnNlKSA9PiB7XG4gICAgICAgICAgcmV0dXJuIHJlc3BvbnNlLmpzb24oKVxuICAgICAgICB9KVxuICAgICAgICAudGhlbiggKGpzb24pID0+IHtcbiAgICAgICAgICB0aGlzLnNldFN0YXRlKHtcImVuZ2xpc2hcIjoganNvbn0pO1xuICAgICAgICB9KTtcbiAgICB9XG5cbiAgICByZW5kZXIoKSB7XG4gICAgICBsZXQge2VuZ2xpc2gsIHNwYW5pc2h9ID0gdGhpcy5zdGF0ZTtcbiAgICAgIGNvbnNvbGUubG9nKCdyZW5kZXIgZW5nbGlzaCBhbmQgc3BhbmlzaCcsIGVuZ2xpc2gsIHNwYW5pc2gpO1xuICAgICAgcmV0dXJuIChcbiAgICAgICAgPGRpdj5cbiAgICAgICAgICA8dGFibGU+XG4gICAgICAgICAgICA8dGJvZHk+XG4gICAgICAgICAgICB7ZW5nbGlzaC5tYXAoKGVuZ2xpc2hQYXJhZ3JhcGgsIGluZGV4KT0+e1xuICAgICAgICAgICAgICAgIHJldHVybiBSZW5kZXJQYXJhZ3JhcGgoZW5nbGlzaFBhcmFncmFwaCwgaW5kZXgsIGVuZ2xpc2gsIHNwYW5pc2gpO1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICApfVxuICAgICAgICAgICAgPC90Ym9keT5cbiAgICAgICAgICA8L3RhYmxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIClcbiAgICB9XG4gIH1cbiAgY29uc3QgZG9tQ29udGFpbmVyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI2JpbGluZ3VhbC1jb250YWluZXInKTtcbiAgUmVhY3RET00ucmVuZGVyKDxCaWxpbmd1YWxDb250ZW50Lz4sIGRvbUNvbnRhaW5lcik7XG5cbiJdfQ==</script>-->
 </head>
 <body cz-shortcut-listen="true">
 
@@ -405,8 +405,8 @@ Where could dust arise?
                 <td class="spanish-paragraph">A mi hijo Andre Pascal Dubuisson Rodelo</td>
             </tr>
             <tr>
-                <td><a name="cp0eng"> INTRODUCTION</a></td>
-                <td><a name="cp0spa">Introducción</a></td>
+                <td><a id="cp0eng"> INTRODUCTION</a></td>
+                <td><a id="cp0spa">Introducción</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph"> I, Pascal Ustin Dubuisson, son of Haiti -- a country where success is a
@@ -456,8 +456,8 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td><a name="cp1eng">Chapter I: </a></td>
-                <td><a name="cp1spa">Capítulo I. Sobrevivientes</a></td>
+                <td><a id="cp1eng">Chapter I: </a></td>
+                <td><a id="cp1spa">Capítulo I. Sobrevivientes</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph">Survivors: Citizens of the World</td>
@@ -603,8 +603,8 @@ Where could dust arise?
                 <td colspan="2"><img src="images/Sobrevivientes-3.jpg"></td>
             </tr>
             <tr>
-                <td><a name="cp2eng">Chapter II: Peru - Ecuador</a></td>
-                <td><a name="cp2spa">Capítulo II. Perú- Ecuador</a></td>
+                <td><a id="cp2eng">Chapter II: Peru - Ecuador</a></td>
+                <td><a id="cp2spa">Capítulo II. Perú- Ecuador</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph">Money is always right</td>
@@ -843,8 +843,8 @@ Where could dust arise?
                 <td colspan="2"><img src="images/Sobrevivientes-5.jpg"></td>
             </tr>
             <tr>
-                <td><a name="cp3eng">Chapter III: Columbia</a></td>
-                <td><a name="cp3spa">Capítulo III. Colombia</a></td>
+                <td><a id="cp3eng">Chapter III: Columbia</a></td>
+                <td><a id="cp3spa">Capítulo III. Colombia</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph">A risky start</td>
@@ -1470,11 +1470,15 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><img src="images/Sobrevivientes-8.jpg"></td>
+                <td colspan="2">
+                    <a id="cp4eng"></a>
+                    <a id="cp4spa"></a>
+                    <img src="images/Sobrevivientes-8.jpg">
+                </td>
             </tr>
             <tr>
-                <td><a name="cp4eng">Chapter IV. Darien Gap</a></td>
-                <td><a name="cp4spa">Capítulo IV. Darien Gap</a></td>
+                <td>Chapter IV. Darien Gap</td>
+                <td>Capítulo IV. Darien Gap</td>
             </tr>
             <tr>
                 <td class="english-paragraph">Save yourself, whoever can</td>
@@ -2927,11 +2931,16 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><img src="images/Sobrevivientes-23.jpg"></td>
+                <td colspan="2">
+                    <img src="images/Sobrevivientes-23.jpg">
+                    <a id="cp5eng"></a>
+                    <a id="cp5spa"></a><
+
+                </td>
             </tr>
             <tr>
-                <td><a name="cp5eng">Chapter V. Panama</a></td>
-                <td><a name="cp5spa">Capítulo V. Panamá</a></td>
+                <td>Chapter V. Panama</td>
+                <td>Capítulo V. Panamá</td>
             </tr>
             <tr>
                 <td class="english-paragraph">Injustice, Abuse, Racism</td>
@@ -3810,11 +3819,11 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><img src="images/Sobrevivientes-26.jpg.png"></td>
+                <td colspan="2"><a id="cp6eng"></a><a id="cp6spa"></a><img src="images/Sobrevivientes-26.jpg.png"></td>
             </tr>
             <tr>
-                <td><a name="cp6eng"> VI. Costa Rica</a></td>
-                <td><a name="cp6spa">Capítulo VI. Costa Rica</a></td>
+                <td> VI. Costa Rica</td>
+                <td>Capítulo VI. Costa Rica</td>
             </tr>
             <tr>
                 <td class="english-paragraph">Free land</td>
@@ -4429,8 +4438,8 @@ Where could dust arise?
                 <td colspan="2"><img src="images/SobrevivSecondHalf-7.jpg"></td>
             </tr>
             <tr>
-                <td><a name="cp7eng">Chapter VII. Nicaragua</a></td>
-                <td><a name="cp7spa">Capítulo VII. Nicaragua</a></td>
+                <td><a id="cp7eng">Chapter VII. Nicaragua</a></td>
+                <td><a id="cp7spa">Capítulo VII. Nicaragua</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph"> Forbidden land</td>
@@ -4846,8 +4855,8 @@ Where could dust arise?
                 <td colspan="2"><img src="images/SobrevivSecondHalf-8.jpg"></td>
             </tr>
             <tr>
-                <td><a name="cp8eng">Chapter VIII. Honduras</a></td>
-                <td><a name="cp8spa">Capítulo VIII. Honduras</a></td>
+                <td><a id="cp8eng">Chapter VIII. Honduras</a></td>
+                <td><a id="cp8spa">Capítulo VIII. Honduras</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph"> Imminent Victory</td>
@@ -5140,8 +5149,8 @@ Where could dust arise?
                 <td colspan="2"><img src="images/SobrevivSecondHalf-9.jpg"></td>
             </tr>
             <tr>
-                <td><a name="cp9eng">Chapter IX. Guatemala</a></td>
-                <td><a name="cp9spa">Capítulo IX. Guatemala</a></td>
+                <td><a id="cp9eng">Chapter IX. Guatemala</a></td>
+                <td><a id="cp9spa">Capítulo IX. Guatemala</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph">Without stopping</td>
@@ -5350,8 +5359,8 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td><a name="cp10eng">Mexico</a></td>
-                <td><a name="cp10spa">México</a></td>
+                <td><a id="cp10eng">Mexico</a></td>
+                <td><a id="cp10spa">México</a></td>
             </tr>
             <tr>
                 <td colspan="2"><img src="images/SobrevivSecondHalf-10.jpg"></td>
@@ -6038,8 +6047,8 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td><a name="cp11eng">Border Observations</a></td>
-                <td><a name="cp11spa">Mi percepción sobre las fronteras</a></td>
+                <td><a id="cp11eng">Border Observations</a></td>
+                <td><a id="cp11spa">Mi percepción sobre las fronteras</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph"> We know that, everywhere in the world, border trade is an economic engine
@@ -6346,8 +6355,8 @@ Where could dust arise?
                 </td>
             </tr>
             <tr>
-                <td><a name="cp12eng"> Reality</a></td>
-                <td><a name="cp12spa">Realidad</a></td>
+                <td><a id="cp12eng"> Reality</a></td>
+                <td><a id="cp12spa">Realidad</a></td>
             </tr>
             <tr>
                 <td class="english-paragraph"> I ask myself sometimes: what are we truly afraid of? Death, the devil,
